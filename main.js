@@ -1,4 +1,4 @@
-$("body").on("click", ".dot", function (e) {
+$("body").on("click", "div.dot", function (e) {
 	//on click add an active class to the dot that was clicked
 	e.preventDefault();
 	//Negates any of the browser's default behavior
@@ -8,6 +8,10 @@ $("body").on("click", ".dot", function (e) {
 	//anything you want, but use $ for jQuery elements so you remember what they are.
 	$this_dot.addClass("active");
 	//Right side is dot that we just clicked on
+});
+
+$("body").on("click", ".dot a", function (e) {
+	e.stopPropagation();
 });
 
 $("body").on("click", ".dot .close", function (e) {
