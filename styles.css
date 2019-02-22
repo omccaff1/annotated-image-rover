@@ -44,6 +44,13 @@ img {
     width: 100%;
 }
 
+h1 {
+    color: red;
+    font-style: oblique;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
 .dot {
     /** Sets an equal height and width and sets border-radius to 50%,
      * all of which combined makes a perfect circle */
@@ -108,6 +115,15 @@ img {
     color: #000;
 }
 
+.dot.brown {
+    background: rgba(205, 133, 63, 0.75);
+    color: black;
+}
+
+.dot.black {
+    background: rgba(0, 0, 0, 0.35);
+}
+
 .dot.fist {
     top: 63%;
     left: 40%;
@@ -118,6 +134,18 @@ img {
     top: 40%;
     left: 86%;
     transform: translate(-86%, -40%);
+}
+
+.dot.box {
+    top: 73%;
+    left: 57%;
+    transform: translate(-57%, -73%);
+}
+
+.dot.coat {
+    top: 62%;
+    left: 80%;
+    transform: translate(-80%, -62%);
 }
 
 /*********************************
